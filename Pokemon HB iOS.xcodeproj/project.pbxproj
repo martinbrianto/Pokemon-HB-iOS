@@ -10,21 +10,47 @@
 		3752F48911A9AB40939CE003 /* Pods_Pokemon_HB_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2C62666C63E634C1D011A3E /* Pods_Pokemon_HB_iOS.framework */; };
 		AEF173B12AFA9F77007A1866 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF173B02AFA9F77007A1866 /* AppDelegate.swift */; };
 		AEF173B32AFA9F77007A1866 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF173B22AFA9F77007A1866 /* SceneDelegate.swift */; };
-		AEF173B52AFA9F77007A1866 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF173B42AFA9F77007A1866 /* ViewController.swift */; };
-		AEF173B82AFA9F77007A1866 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEF173B62AFA9F77007A1866 /* Main.storyboard */; };
 		AEF173BA2AFA9F78007A1866 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEF173B92AFA9F78007A1866 /* Assets.xcassets */; };
 		AEF173BD2AFA9F78007A1866 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEF173BB2AFA9F78007A1866 /* LaunchScreen.storyboard */; };
+		AEF173C92AFB3BD1007A1866 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF173C82AFB3BD1007A1866 /* MainViewController.swift */; };
+		AEF173CB2AFB44A1007A1866 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF173CA2AFB44A1007A1866 /* MainViewModel.swift */; };
+		AEF173CE2AFB640B007A1866 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF173CD2AFB640B007A1866 /* ApiClient.swift */; };
+		AEF173D02AFB69D7007A1866 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF173CF2AFB69D7007A1866 /* NetworkError.swift */; };
+		AEF173D22AFB6F03007A1866 /* CardSearchRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF173D12AFB6F03007A1866 /* CardSearchRepository.swift */; };
+		AEF173D52AFB6FC8007A1866 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF173D42AFB6FC8007A1866 /* String+Extension.swift */; };
+		AEF173D82AFB70DD007A1866 /* PokemonCardList.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF173D72AFB70DD007A1866 /* PokemonCardList.swift */; };
+		AEF173DA2AFB710D007A1866 /* PokemonCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF173D92AFB710D007A1866 /* PokemonCard.swift */; };
+		AEF173DC2AFB76D9007A1866 /* PokemonCardSearchType.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF173DB2AFB76D9007A1866 /* PokemonCardSearchType.swift */; };
+		AEF173DF2AFB7C7C007A1866 /* CardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF173DE2AFB7C7C007A1866 /* CardTableViewCell.swift */; };
+		AEF173E12AFB90BD007A1866 /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF173E02AFB90BD007A1866 /* Array+Extension.swift */; };
+		AEF173E32AFBA6A2007A1866 /* UIView+ReactiveExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF173E22AFBA6A2007A1866 /* UIView+ReactiveExtensions.swift */; };
+		AEF173E52AFBA6D7007A1866 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF173E42AFBA6D7007A1866 /* UIView+Extension.swift */; };
+		AEF173E72AFBE2E6007A1866 /* ChangeSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF173E62AFBE2E6007A1866 /* ChangeSearchViewController.swift */; };
+		AEF173EA2AFBE621007A1866 /* SearchOptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF173E92AFBE621007A1866 /* SearchOptionTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AEF173AD2AFA9F77007A1866 /* Pokemon HB iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pokemon HB iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEF173B02AFA9F77007A1866 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AEF173B22AFA9F77007A1866 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AEF173B42AFA9F77007A1866 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		AEF173B72AFA9F77007A1866 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AEF173B92AFA9F78007A1866 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AEF173BC2AFA9F78007A1866 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AEF173BE2AFA9F78007A1866 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AEF173C82AFB3BD1007A1866 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		AEF173CA2AFB44A1007A1866 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		AEF173CD2AFB640B007A1866 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		AEF173CF2AFB69D7007A1866 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		AEF173D12AFB6F03007A1866 /* CardSearchRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSearchRepository.swift; sourceTree = "<group>"; };
+		AEF173D42AFB6FC8007A1866 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		AEF173D72AFB70DD007A1866 /* PokemonCardList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonCardList.swift; sourceTree = "<group>"; };
+		AEF173D92AFB710D007A1866 /* PokemonCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonCard.swift; sourceTree = "<group>"; };
+		AEF173DB2AFB76D9007A1866 /* PokemonCardSearchType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonCardSearchType.swift; sourceTree = "<group>"; };
+		AEF173DE2AFB7C7C007A1866 /* CardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTableViewCell.swift; sourceTree = "<group>"; };
+		AEF173E02AFB90BD007A1866 /* Array+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extension.swift"; sourceTree = "<group>"; };
+		AEF173E22AFBA6A2007A1866 /* UIView+ReactiveExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+ReactiveExtensions.swift"; sourceTree = "<group>"; };
+		AEF173E42AFBA6D7007A1866 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		AEF173E62AFBE2E6007A1866 /* ChangeSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeSearchViewController.swift; sourceTree = "<group>"; };
+		AEF173E92AFBE621007A1866 /* SearchOptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchOptionTableViewCell.swift; sourceTree = "<group>"; };
 		B2C62666C63E634C1D011A3E /* Pods_Pokemon_HB_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pokemon_HB_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF149CA37179CBBA3EBFEB4F /* Pods-Pokemon HB iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pokemon HB iOS.release.xcconfig"; path = "Target Support Files/Pods-Pokemon HB iOS/Pods-Pokemon HB iOS.release.xcconfig"; sourceTree = "<group>"; };
 		E860B1E9A85154B08FF50097 /* Pods-Pokemon HB iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pokemon HB iOS.debug.xcconfig"; path = "Target Support Files/Pods-Pokemon HB iOS/Pods-Pokemon HB iOS.debug.xcconfig"; sourceTree = "<group>"; };
@@ -48,7 +74,6 @@
 				E860B1E9A85154B08FF50097 /* Pods-Pokemon HB iOS.debug.xcconfig */,
 				BF149CA37179CBBA3EBFEB4F /* Pods-Pokemon HB iOS.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -81,15 +106,92 @@
 		AEF173AF2AFA9F77007A1866 /* Pokemon HB iOS */ = {
 			isa = PBXGroup;
 			children = (
+				AEF173D32AFB6FB9007A1866 /* Extensions */,
+				AEF173CC2AFB63FE007A1866 /* Network */,
+				AEF173C72AFB3B4F007A1866 /* Views */,
+				AEF173C62AFB3AA2007A1866 /* Repositories */,
+				AEF173C52AFB3A9D007A1866 /* ViewModels */,
+				AEF173C42AFB3A37007A1866 /* Models */,
 				AEF173B02AFA9F77007A1866 /* AppDelegate.swift */,
 				AEF173B22AFA9F77007A1866 /* SceneDelegate.swift */,
-				AEF173B42AFA9F77007A1866 /* ViewController.swift */,
-				AEF173B62AFA9F77007A1866 /* Main.storyboard */,
 				AEF173B92AFA9F78007A1866 /* Assets.xcassets */,
 				AEF173BB2AFA9F78007A1866 /* LaunchScreen.storyboard */,
 				AEF173BE2AFA9F78007A1866 /* Info.plist */,
 			);
 			path = "Pokemon HB iOS";
+			sourceTree = "<group>";
+		};
+		AEF173C42AFB3A37007A1866 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AEF173D72AFB70DD007A1866 /* PokemonCardList.swift */,
+				AEF173D92AFB710D007A1866 /* PokemonCard.swift */,
+				AEF173DB2AFB76D9007A1866 /* PokemonCardSearchType.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AEF173C52AFB3A9D007A1866 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				AEF173CA2AFB44A1007A1866 /* MainViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		AEF173C62AFB3AA2007A1866 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				AEF173D12AFB6F03007A1866 /* CardSearchRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		AEF173C72AFB3B4F007A1866 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AEF173E82AFBE5FB007A1866 /* SearchOptionTableViewCell */,
+				AEF173DD2AFB7C4F007A1866 /* CardTableViewCell */,
+				AEF173C82AFB3BD1007A1866 /* MainViewController.swift */,
+				AEF173E62AFBE2E6007A1866 /* ChangeSearchViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AEF173CC2AFB63FE007A1866 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				AEF173CD2AFB640B007A1866 /* ApiClient.swift */,
+				AEF173CF2AFB69D7007A1866 /* NetworkError.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		AEF173D32AFB6FB9007A1866 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AEF173D42AFB6FC8007A1866 /* String+Extension.swift */,
+				AEF173E02AFB90BD007A1866 /* Array+Extension.swift */,
+				AEF173E22AFBA6A2007A1866 /* UIView+ReactiveExtensions.swift */,
+				AEF173E42AFBA6D7007A1866 /* UIView+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		AEF173DD2AFB7C4F007A1866 /* CardTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				AEF173DE2AFB7C7C007A1866 /* CardTableViewCell.swift */,
+			);
+			path = CardTableViewCell;
+			sourceTree = "<group>";
+		};
+		AEF173E82AFBE5FB007A1866 /* SearchOptionTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				AEF173E92AFBE621007A1866 /* SearchOptionTableViewCell.swift */,
+			);
+			path = SearchOptionTableViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,7 +256,6 @@
 			files = (
 				AEF173BD2AFA9F78007A1866 /* LaunchScreen.storyboard in Resources */,
 				AEF173BA2AFA9F78007A1866 /* Assets.xcassets in Resources */,
-				AEF173B82AFA9F77007A1866 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,23 +308,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AEF173B52AFA9F77007A1866 /* ViewController.swift in Sources */,
+				AEF173DC2AFB76D9007A1866 /* PokemonCardSearchType.swift in Sources */,
+				AEF173D52AFB6FC8007A1866 /* String+Extension.swift in Sources */,
+				AEF173DA2AFB710D007A1866 /* PokemonCard.swift in Sources */,
+				AEF173E52AFBA6D7007A1866 /* UIView+Extension.swift in Sources */,
+				AEF173D22AFB6F03007A1866 /* CardSearchRepository.swift in Sources */,
 				AEF173B12AFA9F77007A1866 /* AppDelegate.swift in Sources */,
 				AEF173B32AFA9F77007A1866 /* SceneDelegate.swift in Sources */,
+				AEF173C92AFB3BD1007A1866 /* MainViewController.swift in Sources */,
+				AEF173EA2AFBE621007A1866 /* SearchOptionTableViewCell.swift in Sources */,
+				AEF173DF2AFB7C7C007A1866 /* CardTableViewCell.swift in Sources */,
+				AEF173D02AFB69D7007A1866 /* NetworkError.swift in Sources */,
+				AEF173CB2AFB44A1007A1866 /* MainViewModel.swift in Sources */,
+				AEF173D82AFB70DD007A1866 /* PokemonCardList.swift in Sources */,
+				AEF173E72AFBE2E6007A1866 /* ChangeSearchViewController.swift in Sources */,
+				AEF173E32AFBA6A2007A1866 /* UIView+ReactiveExtensions.swift in Sources */,
+				AEF173E12AFB90BD007A1866 /* Array+Extension.swift in Sources */,
+				AEF173CE2AFB640B007A1866 /* ApiClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		AEF173B62AFA9F77007A1866 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AEF173B72AFA9F77007A1866 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		AEF173BB2AFA9F78007A1866 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -362,7 +469,6 @@
 				INFOPLIST_FILE = "Pokemon HB iOS/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -391,7 +497,6 @@
 				INFOPLIST_FILE = "Pokemon HB iOS/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
