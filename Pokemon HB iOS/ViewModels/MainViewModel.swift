@@ -61,7 +61,7 @@ final class MainViewModelImpl: MainViewModel {
     func loadInitialData() {
         page = 1
         _rxViewState.onNext(.loading)
-        fetchPokemonCardList("Charizard")
+        fetchPokemonCardList("")
     }
     
     func searchPokemonCard(_ keyword: String) {

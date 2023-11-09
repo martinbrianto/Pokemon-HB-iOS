@@ -29,7 +29,7 @@ final class MainViewController: UIViewController {
     
     private lazy var searchBar: UISearchBar = {
         let view = UISearchBar(frame: .zero)
-        view.searchTextField.placeholder = "Search by name"
+        view.searchTextField.placeholder = "Search by pokemon name"
         view.backgroundColor = .clear
         return view
     }()
@@ -60,6 +60,7 @@ final class MainViewController: UIViewController {
         setupView()
         setupBinding()
         setupKeyboardNotification()
+        viewModel.loadInitialData()
     }
     
     required init?(coder: NSCoder) {
@@ -70,8 +71,6 @@ final class MainViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        viewModel.loadInitialData()
-        view.enableTapToDismissKeyboard()
     }
     
     // MARK: - Private Methods
@@ -88,6 +87,11 @@ final class MainViewController: UIViewController {
             .disposed(by: vc.disposeBag)
         
         present(vc, animated: true)
+    }
+    
+    private func navigateToDetailCard(for detail: PokemonCard) {
+        let vc = CardDetailViewController(pokemonCard: detail)
+        navigationController?.pushViewController(vc, animated: true)
     }
     
     func presentErrorAlert(title: String, description: String) {
@@ -126,6 +130,9 @@ final class MainViewController: UIViewController {
     }
     
     private func setupView() {
+        view.enableTapToDismissKeyboard()
+        
+        navigationItem.title = "Pokemon TCG Search"
         navigationItem.rightBarButtonItem = changeSearchTypeButton
         view.backgroundColor = .systemBackground
         
@@ -165,7 +172,6 @@ final class MainViewController: UIViewController {
                     self.activityView.isHidden = false
                     self.activityView.startAnimating()
                     self.tableView.isHidden = true
-                    print("loading")
                 case .loaded:
                     self.activityView.isHidden = true
                     self.activityView.stopAnimating()
@@ -181,8 +187,7 @@ final class MainViewController: UIViewController {
             .disposed(by: disposeBag)
         
         Observable.merge(searchBar.rx.searchButtonClicked.asObservable(),
-                         searchBar.rx.cancelButtonClicked.asObservable(),
-                         searchBar.rx.textDidEndEditing.asObservable())
+                         searchBar.rx.cancelButtonClicked.asObservable())
         .asDriver(onErrorDriveWith: .empty())
         .drive(onNext: { [weak self] in
             self?.viewModel.searchPokemonCard(self?.searchBar.text ?? "")
@@ -230,6 +235,7 @@ extension MainViewController: UITableViewDataSource {
 // MARK: - UITableViewDelegate
 extension MainViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print(viewModel.cardList[indexPath.row])
+        guard let detail = viewModel.cardList[safe:indexPath.row] else { return }
+        navigateToDetailCard(for: detail)
     }
 }

@@ -26,7 +26,7 @@ final class CardSearchRepositoryImpl: CardSearchRepository {
             "pageSize":8
         ]
         
-        if !searchKeyword.isEmpty {
+        if !searchKeyword.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
             params["q"] = "\(searchType.searchParameter):\(searchKeyword)"
         }
         

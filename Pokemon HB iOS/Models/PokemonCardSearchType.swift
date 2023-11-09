@@ -26,22 +26,22 @@ enum PokemonCardSearchType {
     var optionlabel: String {
         switch self {
         case .name:
-            return "By Name"
+            return "By pokemon name"
         case .types:
-            return "By Types"
+            return "By pokemon types"
         case .evolvesFrom:
-            return "By Evolves From"
+            return "By pokemon evolves from"
         }
     }
     
     var searchBarPlaceholder: String {
         switch self {
         case .name:
-            return "Search by name"
+            return "Search by pokemon name"
         case .types:
-            return "Search by types"
+            return "Search by pokemon types"
         case .evolvesFrom:
-            return "Search by evolves from"
+            return "Search by pokemon evolves from"
         }
     }
     

@@ -41,6 +41,7 @@ final class ApiClientImpl: ApiClient {
             
             request.responseData { response in
                 if let error = response.error {
+                    print(error)
                     observer.on(.error(error))
                     return
                 }
@@ -64,6 +65,7 @@ final class ApiClientImpl: ApiClient {
                     default:
                         apiError = .serverError("Unknown server error")
                     }
+                    print(apiError)
                     observer.on(.error(apiError))
                     return
                 }

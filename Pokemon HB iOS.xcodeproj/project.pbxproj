@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3752F48911A9AB40939CE003 /* Pods_Pokemon_HB_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2C62666C63E634C1D011A3E /* Pods_Pokemon_HB_iOS.framework */; };
+		AE2442D02AFCAFC600AFCAE8 /* Numeric+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2442CF2AFCAFC600AFCAE8 /* Numeric+Extension.swift */; };
 		AEF173B12AFA9F77007A1866 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF173B02AFA9F77007A1866 /* AppDelegate.swift */; };
 		AEF173B32AFA9F77007A1866 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF173B22AFA9F77007A1866 /* SceneDelegate.swift */; };
 		AEF173BA2AFA9F78007A1866 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEF173B92AFA9F78007A1866 /* Assets.xcassets */; };
@@ -27,9 +28,13 @@
 		AEF173E52AFBA6D7007A1866 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF173E42AFBA6D7007A1866 /* UIView+Extension.swift */; };
 		AEF173E72AFBE2E6007A1866 /* ChangeSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF173E62AFBE2E6007A1866 /* ChangeSearchViewController.swift */; };
 		AEF173EA2AFBE621007A1866 /* SearchOptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF173E92AFBE621007A1866 /* SearchOptionTableViewCell.swift */; };
+		AEF173EC2AFC094E007A1866 /* CardDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF173EB2AFC094E007A1866 /* CardDetailViewController.swift */; };
+		AEF173F02AFC176F007A1866 /* DetailImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF173EF2AFC176F007A1866 /* DetailImageTableViewCell.swift */; };
+		AEF173F22AFC178B007A1866 /* DetailPriceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF173F12AFC178B007A1866 /* DetailPriceTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AE2442CF2AFCAFC600AFCAE8 /* Numeric+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Numeric+Extension.swift"; sourceTree = "<group>"; };
 		AEF173AD2AFA9F77007A1866 /* Pokemon HB iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pokemon HB iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEF173B02AFA9F77007A1866 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AEF173B22AFA9F77007A1866 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +56,9 @@
 		AEF173E42AFBA6D7007A1866 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		AEF173E62AFBE2E6007A1866 /* ChangeSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeSearchViewController.swift; sourceTree = "<group>"; };
 		AEF173E92AFBE621007A1866 /* SearchOptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchOptionTableViewCell.swift; sourceTree = "<group>"; };
+		AEF173EB2AFC094E007A1866 /* CardDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailViewController.swift; sourceTree = "<group>"; };
+		AEF173EF2AFC176F007A1866 /* DetailImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailImageTableViewCell.swift; sourceTree = "<group>"; };
+		AEF173F12AFC178B007A1866 /* DetailPriceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPriceTableViewCell.swift; sourceTree = "<group>"; };
 		B2C62666C63E634C1D011A3E /* Pods_Pokemon_HB_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pokemon_HB_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF149CA37179CBBA3EBFEB4F /* Pods-Pokemon HB iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pokemon HB iOS.release.xcconfig"; path = "Target Support Files/Pods-Pokemon HB iOS/Pods-Pokemon HB iOS.release.xcconfig"; sourceTree = "<group>"; };
 		E860B1E9A85154B08FF50097 /* Pods-Pokemon HB iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pokemon HB iOS.debug.xcconfig"; path = "Target Support Files/Pods-Pokemon HB iOS/Pods-Pokemon HB iOS.debug.xcconfig"; sourceTree = "<group>"; };
@@ -83,6 +91,32 @@
 				B2C62666C63E634C1D011A3E /* Pods_Pokemon_HB_iOS.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AE98630A2AFCC2DA00C65579 /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				AE98630C2AFCC2F600C65579 /* Components */,
+				AEF173C82AFB3BD1007A1866 /* MainViewController.swift */,
+			);
+			path = MainView;
+			sourceTree = "<group>";
+		};
+		AE98630B2AFCC2ED00C65579 /* ChangeSearch */ = {
+			isa = PBXGroup;
+			children = (
+				AEF173E62AFBE2E6007A1866 /* ChangeSearchViewController.swift */,
+			);
+			path = ChangeSearch;
+			sourceTree = "<group>";
+		};
+		AE98630C2AFCC2F600C65579 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				AEF173DD2AFB7C4F007A1866 /* CardTableViewCell */,
+				AEF173E82AFBE5FB007A1866 /* SearchOptionTableViewCell */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		AEF173A42AFA9F77007A1866 = {
@@ -150,10 +184,9 @@
 		AEF173C72AFB3B4F007A1866 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				AEF173E82AFBE5FB007A1866 /* SearchOptionTableViewCell */,
-				AEF173DD2AFB7C4F007A1866 /* CardTableViewCell */,
-				AEF173C82AFB3BD1007A1866 /* MainViewController.swift */,
-				AEF173E62AFBE2E6007A1866 /* ChangeSearchViewController.swift */,
+				AE98630B2AFCC2ED00C65579 /* ChangeSearch */,
+				AE98630A2AFCC2DA00C65579 /* MainView */,
+				AEF173ED2AFC1703007A1866 /* CardDetail */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -174,6 +207,7 @@
 				AEF173E02AFB90BD007A1866 /* Array+Extension.swift */,
 				AEF173E22AFBA6A2007A1866 /* UIView+ReactiveExtensions.swift */,
 				AEF173E42AFBA6D7007A1866 /* UIView+Extension.swift */,
+				AE2442CF2AFCAFC600AFCAE8 /* Numeric+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -192,6 +226,24 @@
 				AEF173E92AFBE621007A1866 /* SearchOptionTableViewCell.swift */,
 			);
 			path = SearchOptionTableViewCell;
+			sourceTree = "<group>";
+		};
+		AEF173ED2AFC1703007A1866 /* CardDetail */ = {
+			isa = PBXGroup;
+			children = (
+				AEF173EE2AFC170B007A1866 /* Components */,
+				AEF173EB2AFC094E007A1866 /* CardDetailViewController.swift */,
+			);
+			path = CardDetail;
+			sourceTree = "<group>";
+		};
+		AEF173EE2AFC170B007A1866 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				AEF173EF2AFC176F007A1866 /* DetailImageTableViewCell.swift */,
+				AEF173F12AFC178B007A1866 /* DetailPriceTableViewCell.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -311,6 +363,7 @@
 				AEF173DC2AFB76D9007A1866 /* PokemonCardSearchType.swift in Sources */,
 				AEF173D52AFB6FC8007A1866 /* String+Extension.swift in Sources */,
 				AEF173DA2AFB710D007A1866 /* PokemonCard.swift in Sources */,
+				AE2442D02AFCAFC600AFCAE8 /* Numeric+Extension.swift in Sources */,
 				AEF173E52AFBA6D7007A1866 /* UIView+Extension.swift in Sources */,
 				AEF173D22AFB6F03007A1866 /* CardSearchRepository.swift in Sources */,
 				AEF173B12AFA9F77007A1866 /* AppDelegate.swift in Sources */,
@@ -318,9 +371,12 @@
 				AEF173C92AFB3BD1007A1866 /* MainViewController.swift in Sources */,
 				AEF173EA2AFBE621007A1866 /* SearchOptionTableViewCell.swift in Sources */,
 				AEF173DF2AFB7C7C007A1866 /* CardTableViewCell.swift in Sources */,
+				AEF173F22AFC178B007A1866 /* DetailPriceTableViewCell.swift in Sources */,
+				AEF173F02AFC176F007A1866 /* DetailImageTableViewCell.swift in Sources */,
 				AEF173D02AFB69D7007A1866 /* NetworkError.swift in Sources */,
 				AEF173CB2AFB44A1007A1866 /* MainViewModel.swift in Sources */,
 				AEF173D82AFB70DD007A1866 /* PokemonCardList.swift in Sources */,
+				AEF173EC2AFC094E007A1866 /* CardDetailViewController.swift in Sources */,
 				AEF173E72AFBE2E6007A1866 /* ChangeSearchViewController.swift in Sources */,
 				AEF173E32AFBA6A2007A1866 /* UIView+ReactiveExtensions.swift in Sources */,
 				AEF173E12AFB90BD007A1866 /* Array+Extension.swift in Sources */,
