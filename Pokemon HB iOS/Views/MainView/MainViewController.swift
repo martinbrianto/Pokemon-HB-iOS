@@ -225,7 +225,7 @@ extension MainViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        print(indexPath.row)
+        // Trigger infinite scrolling
         if indexPath.row >= viewModel.cardList.endIndex - 1 {
             viewModel.loadMorePokemonCard()
         }
