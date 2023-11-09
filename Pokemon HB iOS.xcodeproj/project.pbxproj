@@ -119,6 +119,18 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
+		AE98630D2AFCC63A00C65579 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				AEF173B02AFA9F77007A1866 /* AppDelegate.swift */,
+				AEF173B22AFA9F77007A1866 /* SceneDelegate.swift */,
+				AEF173B92AFA9F78007A1866 /* Assets.xcassets */,
+				AEF173BB2AFA9F78007A1866 /* LaunchScreen.storyboard */,
+				AEF173BE2AFA9F78007A1866 /* Info.plist */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
 		AEF173A42AFA9F77007A1866 = {
 			isa = PBXGroup;
 			children = (
@@ -140,17 +152,13 @@
 		AEF173AF2AFA9F77007A1866 /* Pokemon HB iOS */ = {
 			isa = PBXGroup;
 			children = (
+				AE98630D2AFCC63A00C65579 /* Application */,
 				AEF173D32AFB6FB9007A1866 /* Extensions */,
 				AEF173CC2AFB63FE007A1866 /* Network */,
 				AEF173C72AFB3B4F007A1866 /* Views */,
 				AEF173C62AFB3AA2007A1866 /* Repositories */,
 				AEF173C52AFB3A9D007A1866 /* ViewModels */,
 				AEF173C42AFB3A37007A1866 /* Models */,
-				AEF173B02AFA9F77007A1866 /* AppDelegate.swift */,
-				AEF173B22AFA9F77007A1866 /* SceneDelegate.swift */,
-				AEF173B92AFA9F78007A1866 /* Assets.xcassets */,
-				AEF173BB2AFA9F78007A1866 /* LaunchScreen.storyboard */,
-				AEF173BE2AFA9F78007A1866 /* Info.plist */,
 			);
 			path = "Pokemon HB iOS";
 			sourceTree = "<group>";
