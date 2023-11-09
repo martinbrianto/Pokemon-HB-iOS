@@ -126,7 +126,6 @@
 				AEF173B22AFA9F77007A1866 /* SceneDelegate.swift */,
 				AEF173B92AFA9F78007A1866 /* Assets.xcassets */,
 				AEF173BB2AFA9F78007A1866 /* LaunchScreen.storyboard */,
-				AEF173BE2AFA9F78007A1866 /* Info.plist */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -152,6 +151,7 @@
 		AEF173AF2AFA9F77007A1866 /* Pokemon HB iOS */ = {
 			isa = PBXGroup;
 			children = (
+				AEF173BE2AFA9F78007A1866 /* Info.plist */,
 				AE98630D2AFCC63A00C65579 /* Application */,
 				AEF173D32AFB6FB9007A1866 /* Extensions */,
 				AEF173CC2AFB63FE007A1866 /* Network */,
