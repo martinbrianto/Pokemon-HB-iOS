@@ -105,6 +105,7 @@
 		AE98630B2AFCC2ED00C65579 /* ChangeSearch */ = {
 			isa = PBXGroup;
 			children = (
+				AE98630E2AFCC82C00C65579 /* Components */,
 				AEF173E62AFBE2E6007A1866 /* ChangeSearchViewController.swift */,
 			);
 			path = ChangeSearch;
@@ -114,7 +115,6 @@
 			isa = PBXGroup;
 			children = (
 				AEF173DD2AFB7C4F007A1866 /* CardTableViewCell */,
-				AEF173E82AFBE5FB007A1866 /* SearchOptionTableViewCell */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -128,6 +128,14 @@
 				AEF173BB2AFA9F78007A1866 /* LaunchScreen.storyboard */,
 			);
 			path = Application;
+			sourceTree = "<group>";
+		};
+		AE98630E2AFCC82C00C65579 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				AEF173E82AFBE5FB007A1866 /* SearchOptionTableViewCell */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		AEF173A42AFA9F77007A1866 = {
